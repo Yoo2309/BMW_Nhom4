@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 
 
 public class DBConnection {
-	private final String serverName = "KHANH-PC";
+	private final String serverName = "DESKTOP-U1COHD1";
 	private final String dbName = "DKDT";
 	private final String portNumber = "1433";
-	private final String instance = "SQLEXPRESS";// MSSQLSERVER LEAVE THIS ONE EMPTY IF YOUR SQL IS A SINGLE INSTANCE
-	private final String userID = "sa";
+	private final String instance = "TLMTIEN";// MSSQLSERVER LEAVE THIS ONE EMPTY IF YOUR SQL IS A SINGLE INSTANCE
+	private final String userID = "bmw";
 	private final String password = "123456";
 
 	public Connection getConnection() throws Exception {
