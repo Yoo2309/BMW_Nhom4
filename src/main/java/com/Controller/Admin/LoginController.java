@@ -2,6 +2,7 @@ package com.Controller.Admin;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -33,6 +34,8 @@ public class LoginController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+
+		response.setHeader("Content-Security-Policy", "default-src 'self';");	    
 		request.getRequestDispatcher("/views/loginPage.jsp").forward(request, response);
 
 	}

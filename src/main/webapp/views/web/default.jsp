@@ -46,9 +46,10 @@
 							<div class="pagination-container">
 								<ul class="pagination">
 									<li class="active"><a>1</a></li>
-									<li><a href="/?page=2">2</a></li>
-									<li class="PagedList-skipToNext"><a href="/?page=2"
-										rel="next">»</a></li>
+									<%--<li><a href="/?page=2">2</a></li>
+									<li class="PagedList-skipToNext"><a href="/?page=2" rel="next">»</a></li>--%>
+									<li><a href="#">2</a></li>
+									<li class="PagedList-skipToNext disabled"><span>»</span></li>
 								</ul>
 							</div>
 						</div>

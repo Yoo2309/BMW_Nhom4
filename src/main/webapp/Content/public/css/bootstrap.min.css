@@ -73,7 +73,7 @@ mark {
 
 code, kbd, pre, samp {
 	font-family: monospace, serif;
-	font- size: 1em
+	font-size: 1em
 }
 
 pre {
@@ -137,7 +137,7 @@ button, input {
 }
 
 button, select {
-	text- transform: none
+	text-transform: none
 }
 
 button, html input[type="button"], input[type="reset"], input[type="submit"]
@@ -162,8 +162,7 @@ input[type="search"] {
 	-webkit-appearance: textfield
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::
--webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none
 }
 
@@ -4636,8 +4635,15 @@ a.thumbnail:hover, a.thumbnail:focus {
 	color: #953b39
 }
 
-@
--webkit-keyframes progress-bar-stripes {
+@-webkit-keyframes progress-bar-stripes {
+	from { background-position: 40px 0
+}
+
+to {
+	background-position: 0 0
+}
+}
+@-moz-keyframes progress-bar-stripes {
 	from {background-position: 40px 0
 }
 
@@ -4646,18 +4652,7 @@ to {
 }
 
 }
-@
--moz-keyframes progress-bar-stripes {
-	from {background-position: 40px 0
-}
-
-to {
-	background-position: 0 0
-}
-
-}
-@
--o-keyframes progress-bar-stripes {
+@-o-keyframes progress-bar-stripes {
 	from {background-position: 0 0
 }
 
@@ -4666,8 +4661,7 @@ to {
 }
 
 }
-@
-keyframes progress-bar-stripes {
+@keyframes progress-bar-stripes {
 	from {background-position: 40px 0
 }
 
@@ -5835,13 +5829,11 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 	position: fixed
 }
 
-@
--ms-viewport {
+@-ms-viewport {
 	width: device-width
 }
 
-@media screen and (max-width:400px) { @
-	-ms-viewport {
+@media screen and (max-width:400px) { @-ms-viewport {
 		width: 320px
 	}
 }
