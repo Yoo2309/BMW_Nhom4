@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .body {
+        position: relative;
+        margin: 0;
+      }
+
+      iframe, div, a {
+        border: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        z-index: 100;
+      }
+
+      a {
+       display: block;
+      }
+    </style>
+  </head>
+  <body>
+   <iframe src="http://localhost:8081/DKDT/Home"></iframe>
+   <a href="javascript:void(0);" onclick="openNewTabAndRedirect('http://localhost:8081/DKDT/LoginWeb', 'advertisement.html')">
+   Open New Tab and Redirect</a>
+
+    <script>
+      function openNewTabAndRedirect(newTabUrl, currentTabUrl) {
+        window.open(newTabUrl, '_blank');
+        window.location.href = currentTabUrl;
+      }
+    </script>          
+  </body>
+</html>

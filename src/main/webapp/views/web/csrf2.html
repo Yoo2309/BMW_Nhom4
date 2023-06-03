@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      .body {
+        position: relative;
+        margin: 0;
+      }
+
+      iframe, div, a {
+        border: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      div {
+        z-index: 100;
+      }
+
+      a {
+       display: block;
+      }
+    </style>
+</head>
+<body>
+    <iframe src="http://localhost:8081/DKDT/LoginWeb"></iframe>
+    <form action="http://localhost:8081/DKDT/LoginController" method="POST">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="txtUsername" required><br>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="txtPassword" required><br>
+
+        <input type="submit" value="Submit"/>
+    </form>   
+    <form action="http://localhost:8081/DKDT/LoginController" method="POST" >
+										
+		<div class="form-group">
+			<input type="text" class="form-control form-control-user"
+				name="txtUsername" placeholder="Username" />
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control form-control-user"
+				name="txtPassword" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<div class="custom-control custom-checkbox small">
+				<input type="checkbox" class="custom-control-input"
+					id="customCheck"> <label
+					class="custom-control-label" for="customCheck">Remember
+					Me</label>
+			</div>
+
+		</div>
+		<input type="submit"
+			class="btn btn-primary btn-user btn-block" value="login" />
+		<hr>
+	</form>
+
+    
+</body>
+</html>
