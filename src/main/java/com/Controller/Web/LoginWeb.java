@@ -28,8 +28,7 @@ public class LoginWeb extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			request.getRequestDispatcher("views/loginPage.jsp").forward(request, response);
-			String csrfToken = UUID.randomUUID().toString();
-			request.getSession().setAttribute("csrfToken", csrfToken);
+			
 			response.setHeader("Content-Security-Policy", "default-src 'self';");	   
 
 	    }

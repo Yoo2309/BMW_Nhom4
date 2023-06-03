@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hiển thị thông tin đăng nhập</title>
+</head>
+<body>
+  <h2>Thông tin đăng nhập</h2>
+  <div id="loginInfo"></div>
+
+  <script>
+    // Lấy thông tin username và password từ URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var username = urlParams.get("username");
+    var password = urlParams.get("password");
+
+    // Hiển thị thông tin đăng nhập
+    var loginInfoElement = document.getElementById("loginInfo");
+    loginInfoElement.innerHTML = "Username: " + username + "<br>Password: " + password;
+  </script>
+</body>
+</html>
